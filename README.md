@@ -2,10 +2,11 @@
 
 ### Static website for my Pink Floyd tribute band
 
-Live website:
+#### Live website: 
 
 http://floydiansplit.com
 
-> Website is actually redirected to Firebase web application:
+
+> Website is actually redirected to custom [Firebase](https://firebase.google.com/) web application:
 
 https://floydian-split.firebaseapp.com/
