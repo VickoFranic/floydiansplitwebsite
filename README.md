@@ -12,8 +12,8 @@ https://floydian-split.firebaseapp.com/
 
 ### HTML template
 
-> Design by W3Layouts
-> Author: W3layouts
-> Author URL: http://w3layouts.com
-> License: Creative Commons Attribution 3.0 Unported
+> Design by W3Layouts <br>
+> Author: W3layouts <br>
+> Author URL: http://w3layouts.com <br>
+> License: Creative Commons Attribution 3.0 Unported <br>
 > License URL: http://creativecommons.org/licenses/by/3.0/
