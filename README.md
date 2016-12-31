@@ -6,10 +6,6 @@ This is static website for my Pink Floyd tribute band
 
 http://floydiansplit.com
 
-> Website is actually redirected to custom [Firebase](https://firebase.google.com/) web application:
-
-https://floydian-split.firebaseapp.com/
-
 ### HTML template
 
 > Design by W3Layouts <br>
