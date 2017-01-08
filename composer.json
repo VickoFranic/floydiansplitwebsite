@@ -1,0 +1,19 @@
+{
+	"authors": [
+	{
+	    "name": "Vicko Franic",
+	    "email": "vfranic@gmail.com",
+	    "role": "Developer"
+	}
+	],
+	"require" : {
+	"facebook/graph-sdk" : "~5.0",
+	"twig/twig": "^1.30"
+	},
+	"require-dev": {
+	"symfony/var-dumper": "^3.2"
+	},
+	"autoload": {
+	    "psr-4": { "FloydianSplit\\": "src/" }
+	}
+}
