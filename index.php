@@ -10,8 +10,9 @@ $client->install();
 
 $app = new App();
 
-$event = $app->getLastEventForFloydians();
+// $event = $app->getLastEventForFloydians();
 
 $template = $app->twig->load('index.twig.html');
 
-echo $template->render(array( 'event' => $event->asJson() ));
+echo $template->render();
+//echo $template->render(array( 'event' => $event->asJson() ));
