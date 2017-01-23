@@ -27,13 +27,13 @@ class App
 
 	public function __construct()
 	{
-		$this->fb = new Facebook([
-		  'app_id' => APP_ID,
-		  'app_secret' => APP_SECRET,
-		  'default_graph_version' => 'v2.5',
-		]);
+		// $this->fb = new Facebook([
+		//   'app_id' => APP_ID,
+		//   'app_secret' => APP_SECRET,
+		//   'default_graph_version' => 'v2.5',
+		// ]);
 
-		$this->fb->setDefaultAccessToken(ACCESS_TOKEN);
+		// $this->fb->setDefaultAccessToken(ACCESS_TOKEN);
 
 		$this->twig = $this->loadTwig();
 	}
