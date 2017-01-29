@@ -29,7 +29,7 @@ class App
 	{
 		$loader = new Twig_Loader_Filesystem('./public/templates/');
 		$twig = new Twig_Environment($loader, array(
-		    'cache' => TWIG_CACHE_PROD,
+		    'cache' => './cache',
 		));
 
 		return $twig;

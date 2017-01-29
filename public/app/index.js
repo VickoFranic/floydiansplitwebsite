@@ -1,11 +1,11 @@
 $(window).load(function() {
 
-	// var url = 'https://floydiansplitapi.herokuapp.com/api/facebook/events/get_last';
-	// $.getJSON(url, function(response, status) {
-	// 	if (status == 'success') {
-	// 		buildNotification(response);
-	// 	}
-	// });
+	var url = 'https://floydiansplitapi.herokuapp.com/api/facebook/events/get_last';
+	$.getJSON(url, function(response, status) {
+		if (status == 'success') {
+			buildNotification(response);
+		}
+	});
 
 	function buildNotification(eventData) {
 
