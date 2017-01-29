@@ -1,48 +1,57 @@
-// $(window).load(function() {
+$(window).load(function() {
 
-// 	var eventData = JSON.parse( $('input[name="event"]').val() );
+	var url = 'https://floydiansplitapi.herokuapp.com/api/facebook/events/get_last';
+	$.getJSON(url, function(response, status) {
+		if (status == 'success') {
+			buildNotification(response);
+		}
+	});
 
-// 	$.notify({
-// 		icon: 'https://scontent.xx.fbcdn.net/v/t1.0-1/c7.99.706.706/s50x50/1504041_766540203358827_4627077962019328691_n.jpg?oh=c5432ed93c4a2432f55108413e0c36fb&oe=5923A975',
-// 		title: buildTitle(eventData),
-// 		message: buildMessage(eventData),
-// 		url: 'https://facebook.com/floydiansplit/events',
-// 		target: '_blank'
-// 	},{
-// 		type: 'minimalist',
-// 		delay: 10000,
-// 		icon_type: 'image',
-// 		placement: {
-// 			from: "top",
-// 			align: "right"
-// 		},
-// 		template: '<div data-notify="container" class="col-sm-4 col-sm-offset-6 alert alert-{0}">' +
-// 					'<img data-notify="icon" class="img-circle pull-right"><br>' +
-// 					'<p><strong data-notify="title">{1}</strong></p>' +
-// 					'<p><small>{2}</small></p>' +
-// 					'<a href="{3}" target="{4}" data-notify="url"></a>' +
-// 				'</div>'
-// 	});
+	function buildNotification(eventData) {
 
-// 	function buildTitle(data) {
-// 		moment.locale('hr');
-// 		var dt = moment(data.start_time).format('LLLL');
+		$.notify({
+			icon: 'https://scontent.xx.fbcdn.net/v/t1.0-1/c7.99.706.706/s50x50/1504041_766540203358827_4627077962019328691_n.jpg?oh=c5432ed93c4a2432f55108413e0c36fb&oe=5923A975',
+			title: buildTitle(eventData),
+			message: buildMessage(eventData),
+			url: 'https://facebook.com/floydiansplit/events',
+			target: '_blank'
+		},{
+			type: 'minimalist',
+			delay: 10000,
+			icon_type: 'image',
+			placement: {
+				from: "top",
+				align: "right"
+			},
+			template: '<div data-notify="container" class="col-sm-4 col-sm-offset-6 alert alert-{0}">' +
+						'<img data-notify="icon" class="img-circle pull-right"><br>' +
+						'<p><strong data-notify="title">{1}</strong></p>' +
+						'<p><small>{2}</small></p>' +
+						'<a href="{3}" target="{4}" data-notify="url"></a>' +
+					'</div>'
+		});
 
-// 		var title = 
-// 			'<h5>' + data.name + '</h5>' +
-// 			'<br><span>' + dt + '</span>';
+		function buildTitle(data) {
+			moment.locale('hr');
+			var dt = moment(data.start_time).format('LLLL');
 
-// 		return title;
-// 	}
+			var title = 
+				'<h4>Najnoviji nastup:</h4><br>' +
+				'<h5>' + data.name + '</h5>' +
+				'<br><span>' + dt + '</span>';
 
-// 	function buildMessage(data) {
+			return title;
+		}
 
-// 		var message = 
-// 			'<span class="glyphicon glyphicon-map-marker"></span>' +
-// 			'<br>' + data.place.name + 
-// 			'<br>' + data.place.location.street + 
-// 			'<br>' + data.place.location.city;
+		function buildMessage(data) {
 
-// 		return message;
-// 	}
-// });
+			var message = 
+				'<span class="glyphicon glyphicon-map-marker"></span>' +
+				'<br>' + data.place.name + 
+				'<br>' + data.place.location.street + 
+				'<br>' + data.place.location.city;
+
+			return message;
+		}
+	}
+});
