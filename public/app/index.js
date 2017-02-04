@@ -3,7 +3,16 @@ $(window).load(function() {
 	var url = 'https://floydiansplitapi.herokuapp.com/api/facebook/events/get_last';
 	$.getJSON(url, function(response, status) {
 		if (status == 'success') {
-			buildNotification(response);
+			
+			var startTime = moment(response.start_time);
+			var now = moment();
+
+			/**
+			 * Show notification only if start time/date is in the future
+			 */
+			if (startTime > now) {
+				buildNotification(response);
+			}
 		}
 	});
 
@@ -20,7 +29,7 @@ $(window).load(function() {
 			delay: 10000,
 			icon_type: 'image',
 			placement: {
-				from: "top",
+				from: "bottom",
 				align: "right"
 			},
 			template: '<div data-notify="container" class="col-sm-4 col-sm-offset-6 alert alert-{0}">' +
