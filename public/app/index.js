@@ -45,7 +45,7 @@ $(window).load(function() {
 			var dt = moment(data.start_time).format('LLLL');
 
 			var title = 
-				'<h4>Najnoviji nastup:</h4><br>' +
+				'<h4>NAJAVA !</h4><br>' +
 				'<h5>' + data.name + '</h5>' +
 				'<br><span>' + dt + '</span>';
 
