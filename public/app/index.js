@@ -71,6 +71,10 @@ $(window).load(function() {
 		var email = $('#email').val();
 		var message = $('#message').val();
 
+		if (! email) {
+			email = "no@email.dev";
+		}
+
 		var url = 'https://floydiansplitapi.herokuapp.com/api/contact_us_email';
 		var data = {
 			"from": email,
@@ -86,10 +90,12 @@ $(window).load(function() {
 			success: function(response) {
 				$('#myModal').modal('hide');
 				$.notify({message: 'Email uspješno poslan !'});
+				$("#send").removeClass('not-active');
 			},
 			error: function(response) {
 				$('#myModal').modal('hide');
 				$.notify({message: 'Whoops...dogodio se problem kod slanja, molimo pokušajte ponovno'});
+				$("#send").removeClass('not-active');
 			}
 		});
 	});
