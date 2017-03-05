@@ -1554,7 +1554,7 @@ section.footer .contact-w3ls h4 {
 
 @media (max-width: 1024px) {
 #slider_full_items, #slider_full_items .opacity, #slider_full_items .img_large {
-    height: 674px;
+    /*height: 674px;*/
 }
 #slider_full_items .img_large { 
 	min-height:674px;
