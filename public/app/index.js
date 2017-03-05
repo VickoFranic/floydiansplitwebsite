@@ -63,4 +63,35 @@ $(window).load(function() {
 			return message;
 		}
 	}
+
+	$('#contact-us-form').on('submit', function(e) {
+		e.preventDefault();
+		$("#send").addClass('not-active');
+		
+		var email = $('#email').val();
+		var message = $('#message').val();
+
+		var url = 'http://floydiansplitapi.dev/api/contact_us_email';
+		var data = {
+			"from": email,
+			"message": message
+		};
+
+		$.ajax({
+			url: url, 
+			type: 'POST',
+			data: JSON.stringify(data),
+			dataType: 'json',
+			contentType: 'application/json',
+			success: function(response) {
+				$('#myModal').modal('hide');
+				$.notify({message: 'Email uspješno poslan !'});
+			},
+			error: function(response) {
+				$('#myModal').modal('hide');
+				$.notify({message: 'Whoops...dogodio se problem kod slanja, molimo pokušajte ponovno'});
+			}
+		});
+	});
+
 });

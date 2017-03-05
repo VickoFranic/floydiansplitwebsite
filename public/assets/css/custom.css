@@ -18,3 +18,25 @@
 .alert-minimalist > [data-notify="message"] {
 	font-size: 80%;
 }
+
+/**
+ * Contact Us Modal
+ */
+#myModal img {
+	width: 150px;
+}
+
+#myModal label {
+	padding-bottom: 5px;
+}
+
+#myModal .form-group {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
