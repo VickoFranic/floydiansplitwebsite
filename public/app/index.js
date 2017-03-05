@@ -71,7 +71,7 @@ $(window).load(function() {
 		var email = $('#email').val();
 		var message = $('#message').val();
 
-		var url = 'http://floydiansplitapi.dev/api/contact_us_email';
+		var url = 'https://floydiansplitapi.herokuapp.com/api/contact_us_email';
 		var data = {
 			"from": email,
 			"message": message
