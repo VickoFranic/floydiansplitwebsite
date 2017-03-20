@@ -1,0 +1,41 @@
+{
+  "name": "floydiansplit",
+  "version": "0.0.0",
+  "description": "This is static website for my Pink Floyd tribute band",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.27.3",
+    "jquery": "^3.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "style-loader": "^0.14.1",
+    "webpack": "~2.2.1",
+    "webpack-dev-server": "~2.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "~6.24.0",
+    "babel-loader": "~6.4.1",
+    "babel-preset-es2015": "~6.24.0",
+    "babel-preset-react": "~6.23.0",
+    "file-loader": "^0.10.1",
+    "url-loader": "^0.5.8",
+    "webpack": "~2.2.1",
+    "webpack-dev-server": "~2.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "webpack-dev-server --hot --inline --colors --progress",
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VickoFranic/floydiansplitwebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VickoFranic/floydiansplitwebsite/issues"
+  },
+  "homepage": "https://github.com/VickoFranic/floydiansplitwebsite"
+}
