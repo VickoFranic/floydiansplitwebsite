@@ -2,6 +2,9 @@
 
 This is static website for my Pink Floyd tribute band
 
+## UPDATE:
+Playing around with React.js on this branch, removed PHP stuff.
+
 #### Live website: 
 
 http://floydiansplit.com
