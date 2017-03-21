@@ -3,36 +3,15 @@ import 'bootstrap';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Http from './services/http';
-
-// Components
-import Event from './components/event';
+import EventsContainer from './containers/EventsContainer';
 import Navigation from './components/navigation';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
-    this.state.data = [];
-    this.Http = new Http;
   }
-
-  componentDidMount() {
-    this.Http.getAllEvents()
-        .then((data) => { this.setState({data: data}); });
-  }
-
   render() {
-    return (
-      <div>
-        <Navigation />
-        {this.state.data.map(function(event, key) {
-          return (
-              <Event key={key} event={event} />
-          )
-        })}
-      </div>
-    )
+    return <EventsContainer />
   }
 }
 
