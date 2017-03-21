@@ -12,8 +12,8 @@ class EventsContainer extends React.Component {
     }
 
     componentDidMount() {
-      this.Http.getAllEvents()
-        .then((data) => { this.setState({events: data}); });
+        this.Http.getAllEvents()
+            .then((data) => { this.setState({events: data}); });
     }
 
     render() {
