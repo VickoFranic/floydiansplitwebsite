@@ -1,6 +1,26 @@
 $(window).load(function() {
 
-	var url = 'https://floydiansplitapi.herokuapp.com/api/facebook/events/get_last';
+	$.notify({
+		icon: 'https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/428178_387290794617105_128713851_n.jpg?oh=58350f26452c7f4dbe76681bc2fed041&oe=592AD668',
+		title: 'Imaš pitanje ili prijedlog za nas?'
+	},{
+		type: 'minimalist',
+		delay: 10000,
+		icon_type: 'image',
+		template: '<div data-notify="container" class="col-xs-8 col-sm-3 alert alert-{0}" role="alert">' +
+			'<img data-notify="icon" class="img-circle img-thumbnail center-block">' +
+			'<span data-notify="title">{1}</span>' +
+			'<br><a href="#" class="btn btn-success btn-block btn-sm" style="outline: none" data-toggle="modal" data-target="#myModal">Kontaktiraj nas !</a>' +
+		'</div>',
+		autoHide: false,
+		clickToHide: true,
+		placement: {
+			from: "bottom",
+			align: "right"
+		}
+	});
+
+	var url = 'http://floydiansplitapi.dev/api/facebook/events/get_last';
 	$.getJSON(url, function(response, status) {
 		if (status == 'success') {
 			
