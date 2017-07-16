@@ -1,8 +1,8 @@
 $(window).load(function() {
 
 	$.notify({
-		icon: 'https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/428178_387290794617105_128713851_n.jpg?oh=58350f26452c7f4dbe76681bc2fed041&oe=592AD668',
-		title: 'Imaš pitanje ili prijedlog za nas?'
+		icon: './public/assets/images/logo.jpg',
+		title: 'Imaš pitanje?'
 	},{
 		type: 'minimalist',
 		delay: 10000,
