@@ -659,7 +659,7 @@ section.team h4 {
 }
 .view .mask,.view .content {
    width:100%;
-   height:320px;
+   height: 100%;
    position: absolute;
    top: 0;
    left: 0;
