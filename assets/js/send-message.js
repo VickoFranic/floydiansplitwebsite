@@ -1,7 +1,7 @@
 function sendMessage() {
 
-    var name = $('input[name="name"').val();
-    var message = $('textarea[name="message"').val();
+    var name = $('input[name="name"]').val();
+    var message = $('textarea[name="message"]').val();
 
     $('#submit-btn').attr('disabled', true);
     toastr.info('Molimo pričekajte...');
