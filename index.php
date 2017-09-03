@@ -54,7 +54,7 @@
 							<article id="info">
 								<h2 class="major">Info</h2>
 
-								<h3>Zašto baš tribute Pink Floydu?</h3>
+								<h3>Zašto baš Pink Floyd?</h3>
 								<p>
 									<h5>Psihodelični rock</h5>
 									<blockquote>Pink Floyd je svojim jedinstvenim zvukom napravio prekretnicu u glazbenom svijetu i time postao antologijska grupa, te je misija Floydiana prije svega odavanje počasti tom glazbenom stvaralaštvu.</blockquote>
