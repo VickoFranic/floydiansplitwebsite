@@ -2,4 +2,4 @@
 
 http://floydiansplit.com
 
-https://raw.githubusercontent.com/VickoFranic/floydiansplitwebsite/master/assets/screenshot.png
+<img src="https://raw.githubusercontent.com/VickoFranic/floydiansplitwebsite/master/assets/screenshot.png">
