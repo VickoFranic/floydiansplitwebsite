@@ -17,7 +17,7 @@ $('#contact-form').submit(function(e) {
         type: "POST",
         contentType: 'application/json',
         dataType: "json",
-        url: "http://floydiansplitapi.dev/api/contact_us_email",
+        url: "https://floydiansplitapi.herokuapp.com/api/contact_us_email",
         data: JSON.stringify(data),
         success: function (response) {
             toastr.success(name + ', vaša poruka je uspješno poslana ;)');
