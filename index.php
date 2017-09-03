@@ -20,7 +20,7 @@
 		<meta property="og:url" content="http://floydiansplit.com/" />
 		<meta property="og:title" content="Floydian Split - The Pink Floyd Experience Show" />
 		<meta property="og:description" content="Pink Floyd je svojim jedinstvenim zvukom napravio prekretnicu u glazbenom svijetu i time postao antologijska grupa, te je misija Floydiana prije svega odavanje počasti tom glazbenom stvaralaštvu." />
-		<meta property="og:image" content="http://floydiansplit.com/images/gif/ploca.gif" />
+		<meta property="og:image" content="http://floydiansplit.com/images/vintage.jpg" />
 	</head>
 	<body>
 
