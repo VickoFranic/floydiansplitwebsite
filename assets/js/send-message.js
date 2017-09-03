@@ -1,6 +1,4 @@
-$('#contact-form').submit(function(e) {
-
-    e.preventDefault();
+function sendMessage() {
 
     var name = $('input[name="name"').val();
     var message = $('textarea[name="message"').val();
@@ -29,4 +27,4 @@ $('#contact-form').submit(function(e) {
             toastr.error("Ups...mail trenutno nije moguće poslati, probajte kasnije.");
         }
     });
-});
+}

@@ -158,7 +158,7 @@
 										<textarea required name="message" id="message" rows="4"></textarea>
 									</div>
 									<ul class="actions text-center">
-										<li><input id="submit-btn" type="submit" value="Pošalji" class="special" /></li>
+										<li><button onclick="sendMessage()" id="submit-btn" type="button" class="special">Pošalji</button></li>
 									</ul>
 								</form>
 							</article>
