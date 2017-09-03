@@ -16,6 +16,11 @@
 
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<meta property="og:url" content="http://floydiansplit.com/" />
+		<meta property="og:title" content="Floydian Split - The Pink Floyd Experience Show" />
+		<meta property="og:description" content="Pink Floyd je svojim jedinstvenim zvukom napravio prekretnicu u glazbenom svijetu i time postao antologijska grupa, te je misija Floydiana prije svega odavanje počasti tom glazbenom stvaralaštvu." />
+		<meta property="og:image" content="http://floydiansplit.com/images/gif/ploca.gif" />
 	</head>
 	<body>
 
