@@ -46,9 +46,8 @@
   @media all and (max-width: 736px) {
 
     .gif-container {
-        width: 230px;
-        height: 230px;
-        background: url('../../images/gif/ploca_200_200.gif') no-repeat center center;
+        width: 300px;
+        height: 300px;
         border-width: 18px;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
