@@ -46,8 +46,7 @@
   @media all and (max-width: 736px) {
 
     .gif-container {
-        width: 300px;
-        height: 300px;
+        zoom: 0.4;
         border-width: 18px;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
