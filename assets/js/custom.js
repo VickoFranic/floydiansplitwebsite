@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 function loadImages() {
 
-    var url = "http://localhost:8000/api/facebook/albums/858332967512883";
+    var url = "https://floydiansplitapi.herokuapp.com/api/facebook/albums/858332967512883";
 
     $.get(url, function (data) {
             $.each(data, function (index, element) {
