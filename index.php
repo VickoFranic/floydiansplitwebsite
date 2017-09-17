@@ -55,6 +55,7 @@
 								<li><a href="#info">Info</a></li>
 								<li><a href="#bend">Bend</a></li>
 								<li><a href="#galerija">Galerija</a></li>
+								<li><a href="#video">Video</a></li>
 								<li><a href="#kontakt">Kontakt</a></li>
 							</ul>
 						</nav>
@@ -163,6 +164,19 @@
 									<!-- Dynamically populated -->
 								</div>
 							</article>
+
+						<!-- Video -->
+						<article id="video">
+							<h2 class="major">Video</h2>
+						
+							<iframe style="height: 300px; width: 100%;" src="https://www.youtube.com/embed/dvH3GmNg-mI" frameborder="0" allowfullscreen></iframe>
+							<hr>
+							<iframe style="height: 300px; width: 100%;" src="https://www.youtube.com/embed/7Zeb0NPXNFw" frameborder="0" allowfullscreen></iframe>
+							<hr>
+							<iframe style="height: 300px; width: 100%;" src="https://www.youtube.com/embed/88j_7rlByCw" frameborder="0" allowfullscreen></iframe>
+
+						</article>
+							
 
 						<!-- Contact -->
 							<article id="kontakt">
