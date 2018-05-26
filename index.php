@@ -41,6 +41,14 @@
 
 				<!-- Header -->
 					<header id="header">
+						<nav>
+							<ul class="animated fadeInUpBig">
+								<li><a href="#info">Info</a></li>
+								<li><a href="#bend">Bend</a></li>
+								<li><a href="#galerija">Galerija</a></li>
+								<li><a href="#video">Video</a></li>
+							</ul>
+						</nav>
 						<div class="content">
 							<div class="inner">
 								<h1 id="title">Floydian Split</h1>
@@ -50,15 +58,6 @@
 								</div>
 							</div>
 						</div>
-						<nav>
-							<ul class="animated fadeInUpBig">
-								<li><a href="#info">Info</a></li>
-								<li><a href="#bend">Bend</a></li>
-								<li><a href="#galerija">Galerija</a></li>
-								<li><a href="#video">Video</a></li>
-								<li><a href="#kontakt">Kontakt</a></li>
-							</ul>
-						</nav>
 						<ul class="icons">
 							<li><a href="https://www.facebook.com/FloydianSplit/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="https://www.instagram.com/floydiansplit/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
@@ -177,24 +176,6 @@
 
 						</article>
 							
-
-						<!-- Contact -->
-							<article id="kontakt">
-								<h2 class="major">Kontakt</h2>
-								<form method="post" action="#" id="contact-form">
-									<div class="field">
-										<label for="name">Ime</label>
-										<input required type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="message">Poruka</label>
-										<textarea required name="message" id="message" rows="4"></textarea>
-									</div>
-									<ul class="actions text-center">
-										<li><button onclick="sendMessage()" id="submit-btn" type="button" class="special">Pošalji</button></li>
-									</ul>
-								</form>
-							</article>
 					</div>
 
 				<!-- Footer -->
@@ -213,7 +194,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/custom.js"></script>
-			<script src="assets/js/send-message.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 			<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 	</body>
