@@ -2,6 +2,12 @@
     display: none;
 }
 
+.toast-close-button {
+    box-shadow: none!important;
+    top: -1rem!important;
+    right: 0.7rem!important;
+}
+
 #header nav ul li a {
     font-weight: 100;
     font-size: 1em;

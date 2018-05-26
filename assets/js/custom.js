@@ -1,13 +1,15 @@
 
 $(document).ready(function() {
-    $('#title').fadeIn(4000);
-    $('#subtitle').fadeIn(7000);
-
-    loadImages();
-    showEvents();
+    
+    $(window).load(function() {
+        $('#title').fadeIn(4000);
+        $('#subtitle').fadeIn(7000);
+    
+        showEvents();
+        loadImages();
+    });
+    
 });
-
-
 
 function loadImages() {
 
@@ -17,6 +19,8 @@ function loadImages() {
             $.each(data, function (index, element) {
                 $('.masonry').append('<div class="item"><img onclick=openFancyBox(' + JSON.stringify(element) + ') src="' + element.url + '" /></div>');
             });
+
+            imagesLoaded = true;
         }
     );
 }
@@ -39,9 +43,8 @@ function showEvents() {
     `;
 
     var options = {
-        positionClass: "toast-top-right",
-        timeOut: 0,
-        extendedTImeout: 0
+        timeOut: 10000,
+        closeButton: true
     }
 
     toastr.info(html, '<h4>Sljedeći nastupi</h4>', options);
