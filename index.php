@@ -60,7 +60,6 @@
 						</div>
 						<ul class="icons">
 							<li><a href="https://www.facebook.com/FloydianSplit/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/floydiansplit/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 						</ul>
 					</header>
 
