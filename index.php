@@ -40,6 +40,7 @@
 			<div id="wrapper">
 
 
+
 				<!-- Header -->
 					<header id="header">
 						<nav>
@@ -100,7 +101,8 @@
 								<h2 class="major">Bend</h2>
 								
 								<div class="band-member">
-									<img class="img-circle center-block" src="./images/vice.png" alt="">
+
+									<img class="img-circle center-block" src="./images/vice.png" alt="Vicko">
 									<br>
 									<h3 class="text-center">Vicko Franić</h3>
 									<h6 class="text-center">Gitara/Vokal</h6>
